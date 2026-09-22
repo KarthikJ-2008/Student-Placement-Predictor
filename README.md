@@ -88,9 +88,9 @@ The project also includes a responsive and modern web interface that can be used
    └─────────────────────┘
              │
              ▼
-   ┌─────────────────────┐
+   ┌──────────────────────┐
    │ Flask Web Application│
-   └─────────────────────┘
+   └──────────────────────┘
              │
              ▼
    ┌─────────────────────┐
@@ -108,52 +108,56 @@ The project also includes a responsive and modern web interface that can be used
 
 ----
 
-📄 File Description
+## 📄 File Description
 
-app.py
-
+**`app.py`**
 Contains the Flask application and prediction logic.
 
-model.pkl
-
+**`model.pkl`**
 Contains the trained Machine Learning model used for prediction.
 
-templates/index.html
-
+**`templates/index.html`**
 Contains the user interface of the web application.
 
-static/style.css
-
+**`static/style.css`**
 Contains the styling and responsive design.
 
-requirements.txt
-
+**`requirements.txt`**
 Contains the Python libraries required to run the project.
 
 ----
 
-🚀 Run the Project Locally
+## 🚀 Run the Project Locally
 
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/KarthikJ-2008/Student-Placement-Predictor.git
 
-2️⃣ Open the Project
+### 2️⃣ Open the Project
+```bash
 cd student-placement-prediction
 
-3️⃣ Create a Virtual Environment
+### 3️⃣ Create a Virtual Environment
+```bash
 python -m venv myenv
 
-4️⃣ Activate the Environment
-Windows:
+### 4️⃣ Activate the Environment
+
+**Windows:**
+```bash
 myenv\Scripts\activate
 
-5️⃣ Install Required Libraries
+### 5️⃣ Install Required Libraries
+```bash
 pip install -r requirements.txt
 
-6️⃣ Run Flask
+### 6️⃣ Run Flask
+```bash
 python app.py
 
-7️⃣ Open in Browser
+### 7️⃣ Open in Browser
+```bash
 http://127.0.0.1:5000/
 
 ---
