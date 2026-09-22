@@ -105,8 +105,9 @@ The project also includes a responsive and modern web interface that can be used
              │
              ▼
           🎯 Result
+```
 
-----
+---
 
 ## 📄 File Description
 
@@ -125,45 +126,62 @@ Contains the styling and responsive design.
 **`requirements.txt`**
 Contains the Python libraries required to run the project.
 
-----
+---
 
 ## 🚀 Run the Project Locally
 
 ### 1️⃣ Clone the Repository
-
 ```bash
 git clone https://github.com/KarthikJ-2008/Student-Placement-Predictor.git
+```
 
 ### 2️⃣ Open the Project
 ```bash
-cd student-placement-prediction
+cd Student-Placement-Predictor
+```
 
 ### 3️⃣ Create a Virtual Environment
 ```bash
 python -m venv myenv
+```
 
 ### 4️⃣ Activate the Environment
 
 **Windows:**
 ```bash
 myenv\Scripts\activate
+```
+
+**Mac/Linux:**
+```bash
+source myenv/bin/activate
+```
 
 ### 5️⃣ Install Required Libraries
 ```bash
 pip install -r requirements.txt
+```
 
-### 6️⃣ Run Flask
+### 6️⃣ Run the Flask Application
 ```bash
 python app.py
+```
 
 ### 7️⃣ Open in Browser
 ```bash
 http://127.0.0.1:5000/
+```
 
 ---
 
-⭐ Support the Project
+## ⭐ Support the Project
 
-If you found this project useful or interesting, please consider giving this repository a ⭐ Star!
+If you found this project useful or interesting, please consider giving this repository a **⭐ Star** on GitHub!
 
-Your support motivates me to create more projects. Thank you for visiting! 🚀
+Your support motivates me to create and share more **Machine Learning and Web Development projects**. 🚀
+
+### ⭐ Like this project?
+
+**Don't forget to Star the Repository!** ❤️
+
+Thank you for visiting! 🙌
