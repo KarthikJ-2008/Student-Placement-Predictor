@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Placement Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- Header -->
+            <div class="header">
+                <div class="icon">🎓</div>
+                <h1>Student Placement</h1>
+                <p>Enter your academic details to predict your placement</p>
+            </div>
+
+            <!-- Prediction Form -->
+            <form action="/predict" method="post">
+
+                <!-- CGPA -->
+                <div class="form-group">
+                    <label for="CGPA">CGPA</label>
+                    <div class="input-box">
+                        <span>📊</span>
+                        <input type="number" step="0.01" name="CGPA" id="CGPA"
+                            placeholder="Enter your CGPA" min="0" max="10" required>
+                    </div>
+                </div>
+
+                <!-- Internships -->
+                <div class="form-group">
+                    <label for="Internships">Internships</label>
+                    <div class="input-box">
+                        <span>💼</span>
+                        <input type="number" name="Internships" id="Internships"
+                            placeholder="Number of internships" min="0" required >
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="form-group">
+                    <label for="Projects">Projects</label>
+                    <div class="input-box">
+                        <span>💻</span>
+                        <input type="number" name="Projects" id="Projects"
+                            placeholder="Number of projects" min="0" required>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="form-group">
+                    <label for="Certifications">Certifications</label>
+                    <div class="input-box">
+                        <span>🏆</span>
+                        <input type="number" name="Certifications"
+                            id="Certifications"  min="0" required
+                            placeholder="Number of certifications">
+                    </div>
+                </div>
+
+                <!-- Communication Skills -->
+                <div class="form-group">
+                    <label for="Communication_Skills"> Communication Skills</label>
+
+                    <div class="input-box">
+                        <span>🗣️</span>
+                        <input type="number" step="0.01" name="Communication_Skills"
+                            id="Communication_Skills" placeholder="Enter score"
+                            min="0" max="10" required >
+                    </div>
+                </div>
+
+                <!-- Backlogs -->
+                <div class="form-group">
+                    <label for="Backlogs"> Backlogs</label>
+                    <div class="input-box">
+                        <span>📚</span>
+                        <input type="number" name="Backlogs" id="Backlogs"
+                            placeholder="Number of backlogs" min="0" required>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <input type="submit" value="🔮 Predict Placement">
+            </form>
+
+            <!-- Prediction Result -->
+            {% if prediction_text %}
+            <div class="result">
+                {{ prediction_text }}
+            </div>
+            {% endif %}
+
+            <!-- Footer -->
+            <div class="footer">🤖 Powered by Machine Learning </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
